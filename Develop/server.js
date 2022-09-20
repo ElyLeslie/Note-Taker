@@ -6,7 +6,7 @@ const db = require('./db/db.json')
 const fs = require('fs')
 
 
-const PORT = process.env.port || 3001;
+const PORT = process.env.PORT || 3001;
 
 //Process.env.port is the port that the host is using.
 //Server is always listening for a request through the PORT.
