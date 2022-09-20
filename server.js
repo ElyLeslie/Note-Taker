@@ -34,6 +34,23 @@ res.json(newNote)
 }
 )
 
+//The correct order in order to delete everything accordingly. 
+
+app.delete('/api/notes/:id', (req,res) => {
+  const deletePost = req.params.id; 
+  notes.splice(deletePost, 1); 
+  //Update ids when deleted 
+  for( i=0; i < notes.length; i++){
+      notes[i].id=i;
+  }
+  // rewrite to file
+  fs.writeFileSync(
+      path.join(__dirname, '/db/db.json'),
+      JSON.stringify(notes,null, 2)
+  );
+  res.json(req.body); 
+  });
+
 
 //Creating new routes for HTML 
 app.get('/', (req, res) =>
