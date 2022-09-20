@@ -32,4 +32,4 @@
 * If you would like to contact me to address any further questions, please email me at youngleuchovius@gmail.com
 * You can find my GitHub at github.com/ElyLeslie
 
-![Screenshot of the web application](assets\Screenshot-of-Web-App.png)
+![Screenshot of the web application](./assets/Screenshot-of-Web-App.png)
